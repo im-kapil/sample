@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Sending Mail</title>
+<script type="text/javascript">
+	function sendEmail() {
+        let Email = document.getElementById('email').value;
+        alert("Redirect to GMail",location.replace("https://mail.google.com/mail/u/1/?view=cm&fs=1&to={Email}.com&tf=1"));
+        console.log("hi");
+	}
+</script>
+</head>
+
+<body>
+<form method="post">
+    <label for="Email"><b> Email</b></label>
+    <input type="text" placeholder="Enter Email" id="email" name="email" required>
+	<br>
+    <input type="button" value="Send Mail" onclick="sendEmail()" />        
+        
+</form>
+</body>
+
+</html>

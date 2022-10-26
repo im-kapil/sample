@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "deploy": "npm run build && node scripts/deploy.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ipfs-http-client": "^56.0.2"
+  },
+  
+  "devDependencies": {
+    "stylus": "^0.54.8",
+    "vite": "^2.4.3"
+  }
+
+}

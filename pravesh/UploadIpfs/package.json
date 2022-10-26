@@ -1,0 +1,27 @@
+{
+  "name": "browserify-tut",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browserify ./src/web3connect.js > ./dist/bundle.js -d",
+    "build": "browserify ./src/web3connect.js  > ./dist/bundle.js -t babelify --plugin tinyify",
+    "watch": "watchify ./src/web3connect.js -o ./dist/bundle.js -d -v"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
+    "babelify": "^10.0.0"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "@truffle/hdwallet-provider": "^1.5.1",
+    "browserify": "^17.0.0",
+    "ipfs-http-client": "^56.0.2",
+    "web3": "^1.8.0",
+    "web3.storage": "^3.5.7"
+  }
+}

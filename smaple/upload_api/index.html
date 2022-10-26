@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Upload Data On Ipfs</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>  
+	<script>  
+	$(document).ready(function() {  
+	   $('#uploadForm').submit(function() {  
+		   $("#status").empty().text("File is uploading...");  
+	
+		  $(this).ajaxSubmit({  
+	
+			  error: function(xhr) {  
+					  status('Error: ' + xhr.status);  
+			  },  
+	
+			  success: function(response) {  
+					  console.log(response)  
+					  $("#status").empty().text(response);  
+			  }  
+	  });  
+	
+	  return false;  
+	  });      
+  });  
+	</script>  
+</head>
+
+<body>
+	<h1> Sample Upload File</h1>
+    Select a file to upload: <br />
+	<form id="uploadForm" action="/loadfile" method="post" enctype="multipart/form-data">
+		<!-- <input type="text" name="num1"
+			placeholder="First Number">
+		<input type="text" name="num2"
+			placeholder="Second Number"> -->
+            <td><input type="file" name="fileName"></td>
+           <input type="submit" value="Upload Image"name="submit"/><br/><br/>
+		   
+		   <span id="status"></span>  
+
+			
+		<!-- <button type="submit" name="submit">
+			calculator
+		</button> -->
+
+	</form>
+</body>
+
+</html>

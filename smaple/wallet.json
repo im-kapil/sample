@@ -1,0 +1,44 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>MNF Form</title>    
+    <link rel="stylesheet" type="text/css" href="style.css">    
+</head>    
+<body>    
+    <h2>MyNextFilm</h2><br>    
+       
+    <form id="mnf" method="get" action=""> 
+        <div class="mnf1">      
+        <input type="text" name="Email" id="Email" placeholder="Email">    
+        <br><br>      
+        <input type="text" name="PreviewName" id="PreviewName" placeholder="PreviewName">        
+        <br><br> 
+        <input type="file" id="myFile" name="filename">
+        <br><br>  
+        <input type="button" name="Preview" id="Preview" value="Preview" onClick="preview()">       
+    </div>   
+    <div class="mnf2">      
+        <input type="text" name="Email" id="Email" placeholder="Email">    
+        <br><br>      
+        <input type="text" name="FullScriptName" id="PreviewName" placeholder="FullScriptName">    
+        <br><br>  
+        <input type="text" name="key" id="key" placeholder="Key">           
+        <br><br>
+        <input type="file" id="myFile" name="filename">
+        <br><br>
+        <input type="button" name="fullScript" id="fullScript" value="fullScript" onClick="fullscript()">
+    </div>        
+    </form> 
+    <script>
+        const preview = () =>{
+            var email = document.getElementById('Email').value;
+            alert(email)
+        }
+        const fullscript = () =>{
+            var email1 = document.getElementById('Email').value;
+            alert(email1)
+        }
+
+    </script>        
+</body>    
+</html>     

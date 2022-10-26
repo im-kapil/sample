@@ -1,0 +1,16 @@
+{
+  "name": "web3_connect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "storage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.5.1-alpha.1",
+    "web3": "^1.8.0"
+  }
+}

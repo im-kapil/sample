@@ -1,0 +1,17 @@
+{
+  "name": "encrypted_file",
+  "version": "1.0.0",
+  "description": "",
+  "main": "5_6149923989939554473.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tanker/client-node": "^3.0.0",
+    "aes-encryption": "^1.0.4",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.1.1"
+  }
+}

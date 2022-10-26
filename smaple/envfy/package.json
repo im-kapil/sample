@@ -1,0 +1,19 @@
+{
+  "name": "envfy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "envfy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "dotenv-flow": "^3.2.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
